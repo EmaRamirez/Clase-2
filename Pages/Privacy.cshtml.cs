@@ -24,7 +24,7 @@ public class PrivacyModel : PageModel
         Data = new Form();
 
         Data.mail = "emanuelramirez169@gmail.com";
-        Data.password = 1234;
+        Data.password = 12345;
     }
 
     public IActionResult OnPost()
