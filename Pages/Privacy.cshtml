@@ -1,0 +1,23 @@
+﻿@page
+@model PrivacyModel
+@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Use this page to detail your site's privacy policy.</p>
+
+<form method="post" class="row g-3">
+    <div class="col-auto">
+        <label asp-for="Data.mail"></label>
+        <input type="text" readonly class="form-control-plaintext" id="staticEmail2" asp-for="Data.mail">
+        <!-- asp-for es para decirle con quien quiero mapearlo   -->
+    </div>
+    <div class="col-auto">
+        <label asp-for="Data.password">Password</label>
+        <input type="password" class="form-control" id="inputPassword2" asp-for="Data.password">
+    </div>
+    <div class="col-auto">
+        <button type="submit" class="btn btn-primary mb-3">Confirmar Identidad</button>
+    </div>
+</form>
